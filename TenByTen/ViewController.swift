@@ -32,10 +32,7 @@ class ViewController:UIViewController, UICollectionViewDelegate, UICollectionVie
 
 	// MARK:- Private Methods
 	private func loadData() {
-		// Get current date & time in correct format. URL: http://tenbyten.org/Data/global/2004/11/05/09/
-		fmt.dateFormat = "YYYY/MM/dd/HH/"
-		fmt.timeZone = NSTimeZone(name:"EST")
-//		let baseURL = "http://tenbyten.org/Data/global/" + fmt.stringFromDate(NSDate())
+		// Images URL format: http://tenbyten.org/Data/global/2015/10/09/23/refugee.jpg
 		let baseURL = "http://tenbyten.org/Data/global/2015/09/22/22/"
 		let path = baseURL + "words.txt"
 		if let url = NSURL(string:path) {
