@@ -42,7 +42,7 @@ class ViewController:UIViewController, UICollectionViewDelegate, UICollectionVie
 				if let txt = NSString(data:buf!, encoding:NSUTF8StringEncoding) {
 					self.urls = txt.componentsSeparatedByCharactersInSet(NSCharacterSet.newlineCharacterSet())
 					for fl in self.urls {
-						let ipath = baseURL + fl + ".jpg"
+						let ipath = baseURL + fl
 						if let iurl = NSURL(string:ipath) {
 							let op = ImageDownloader()
 							op.request = NSURLRequest(URL:iurl)
