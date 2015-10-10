@@ -33,7 +33,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="230" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z53-il-y9F">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z53-il-y9F">
                                                     <rect key="frame" x="0.0" y="0.0" width="227" height="150"/>
                                                     <animations/>
                                                     <constraints>
@@ -67,6 +67,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lcP-xn-wnu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vGt-TH-TJR"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <animations/>
@@ -78,6 +82,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dVO-YS-qh6" secondAttribute="bottom" id="fXL-yB-MnN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="dVO-YS-qh6" id="0L3-qK-qM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

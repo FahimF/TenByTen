@@ -9,6 +9,6 @@
 import UIKit
 
 class ImageViewCell:UICollectionViewCell {
-	@IBOutlet private weak var imgThumb:UIImageView!
-	@IBOutlet private weak var lblTitle:UILabel!
+	@IBOutlet weak var imgThumb:UIImageView!
+	@IBOutlet weak var lblTitle:UILabel!
 }
