@@ -282,6 +282,7 @@
 				DDF1C2E11BC8C6530094E682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
